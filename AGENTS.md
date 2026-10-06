@@ -45,6 +45,7 @@ Maak hoogwaardige, mooie, snelle, **veilige** en onderhoudbare software met de *
 ## Activeer alleen relevante skills
 
 - Website, app-UI, interactieve HTML, animatie: `beautiful-html`.
+- Dashboards, KPI-overzichten, klantleveringen, grafieken en BI-inzichten: `dashboard-storytelling` (combineer met `beautiful-html` voor web).
 - Ontwerp, implementatie, refactor en performance: `lean-code`.
 - User-input, bestandstoegang, rechten, opslag, auth, tokens, releases: `security-first`.
 - Bugs, mislukte tests, PowerShell- en browserfouten: `debug-verify`.

@@ -13,6 +13,9 @@ Deze bundel bestaat uit eigen, compacte instructies **geïnspireerd** op de volg
 | [Diagram Design](https://github.com/cathrynlavery/diagram-design) | Rustige hoogwaardige HTML/SVG-schema's | visual-diagrams |
 | [I Have ADHD](https://github.com/ayghri/i-have-adhd) | Actiegericht en compact communiceren | AGENTS |
 | [Humanizer](https://github.com/blader/humanizer) | Natuurlijke teksten en minder filler | AGENTS |
+| [Justinmind: dashboard design](https://www.justinmind.com/ui-design/dashboard-design-best-practices-ux) | Layout, F/Z-hiërarchie, relevantie, dataweergave, filters | dashboard-storytelling |
+| [NN/g: chart types](https://www.nngroup.com/articles/choosing-chart-types/) | Context, contrast, beperken van ruis | dashboard-storytelling |
+| [NN/g: data tables](https://www.nngroup.com/articles/data-tables/) | Filterbaarheid, vergelijkbaarheid, exacte waarden | dashboard-storytelling |
 
 [Graphify](https://github.com/Graphify-Labs/graphify) bewust niet standaard: nuttig bij grote codebases, maar extra Python-tooling zou het systeem voor kleine projecten onnodig verzwaren.
 

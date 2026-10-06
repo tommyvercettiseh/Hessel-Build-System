@@ -25,6 +25,7 @@ De bronbestanden in **deze repo** zijn leidend. Maak geen extra kopieën die ona
 | [debug-verify](.agents/skills/debug-verify/SKILL.md) | Oorzaak vinden en echte tests draaien |
 | [clean-deployment](.agents/skills/clean-deployment/SKILL.md) | GitHub Actions en releases |
 | [visual-diagrams](.agents/skills/visual-diagrams/SKILL.md) | Interactieve en statische HTML/SVG-schema's |
+| [dashboard-storytelling](.agents/skills/dashboard-storytelling/SKILL.md) | KPI-hiërarchie, correcte groeicijfers, grafiekselectie, interactie en data-QA |
 
 ## ChatGPT (aanbevolen)
 
