@@ -26,6 +26,7 @@ De bronbestanden in **deze repo** zijn leidend. Maak geen extra kopieën die ona
 | [clean-deployment](.agents/skills/clean-deployment/SKILL.md) | GitHub Actions en releases |
 | [visual-diagrams](.agents/skills/visual-diagrams/SKILL.md) | Interactieve en statische HTML/SVG-schema's |
 | [dashboard-storytelling](.agents/skills/dashboard-storytelling/SKILL.md) | KPI-hiërarchie, correcte groeicijfers, grafiekselectie, interactie en data-QA |
+| [DESIGN-sjabloon](templates/DESIGN.template.md) | Optionele projectspecifieke visuele standaard |
 
 ## ChatGPT (aanbevolen)
 
@@ -44,3 +45,7 @@ Voor Codex-compatibele agent-skills is `.agents/skills/` de canonieke locatie. E
 - Bij destructieve wijzigingen eerst herstelbaarheid vastleggen.
 
 Dit zijn eigen, compacte richtlijnen geïnspireerd op externe repos, geen installaties van die plugins. Zie [SOURCES.md](SOURCES.md).
+
+## Optioneel ontwerpcontract
+
+Voor meerdere blijvende HTML/app-schermen kan een eigen [DESIGN.md](templates/DESIGN.template.md) nuttig zijn. Voor kleine losse HTML-tools is dit nooit verplicht. Begin altijd bij de bestaande merkidentiteit en code.

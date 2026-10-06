@@ -31,3 +31,19 @@ description: Risk-based security for DOM, uploads, file operations, APIs, creden
 **Rapporteer:** risico, concreet bewijs, ernst, minimale fix en teststatus. Nooit '100% veilig' claimen.
 
 Bronideeën: Cloudflare security-audit-skill en Addy Osmani security-and-hardening.
+
+## Platformgerichte controles
+
+**Windows / PowerShell / Python**
+- Voer processen standaard zonder administratorrechten uit, verhoog alleen een expliciete noodzakelijke bewerking.
+- Geen `Invoke-Expression` met gebruikersinput of ongecontroleerde `shell=True`. Geef paden letterlijk en argumenten als een lijst door.
+- Valideer netwerk-/UNC-paden, symlinks, DLL- en registrywaarden; blokkeer legitieme netwerkschijven niet blind, voorkom onverwachte netwerk-authenticatie en onbedoelde schrijfacties.
+- Bescherm API-tokens via geschikte OS-credentialopslag; geen credentials in configbestanden, commando-logs of Git. Schakel PowerShell execution policy niet systeemwijd uit als generieke oplossing.
+
+**Android**
+- Controleer exported components, Intents, WebView-URL's, JS-bruggen, opslag en permissies op onbetrouwbare input.
+- Keystore of gelijkwaardige beveiligde opslag voor secrets; signing-keys buiten Git en controleer release-APK-signatuur.
+- Productieconfiguratie op `debuggable`, cleartext en HTTPS controleren. Bepaal back-upbeleid en eventuele certificate-pinning *risicogebaseerd*, niet automatisch uitschakelen of opleggen.
+- Updates alleen met passende handtekening/verificatie en de door Android vereiste toestemming.
+
+Bronidee: Claude Vibe Skills `SECURITY_WINDOWS.md`, `SECURITY_ANDROID.md`, `SECURITY_GATE.md`.

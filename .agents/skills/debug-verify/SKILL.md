@@ -22,3 +22,11 @@ description: Reproduce a bug, find root cause, implement minimal safe fix, add a
 Geen zware testharness wanneer één assert of kleine browsertest volstaat.
 
 Bronideeën: Matt Pocock diagnosing-bugs en Superpowers.
+
+## Aanvullende kwaliteitschecks
+
+- Visuele wijzigingen: controleer indien mogelijk screenshots van het echte scherm, devicebreedtes en states; zonder uitvoeromgeving geen geslaagde screenshottest claimen.
+- Securitytests: aantonen dat het nieuwe regressiescenario zonder fix daadwerkelijk kan falen; groene maar verkeerd geformuleerde tests tellen niet als bewijs.
+- Houd onderzoek, implementatie en validatie minimaal maar voldoende en schaal op bij grotere risico's.
+
+Bronidee: Claude Vibe Skills `QUALITY_REFERENCE.md`.

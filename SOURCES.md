@@ -20,3 +20,12 @@ Deze bundel bestaat uit eigen, compacte instructies **geïnspireerd** op de volg
 [Graphify](https://github.com/Graphify-Labs/graphify) bewust niet standaard: nuttig bij grote codebases, maar extra Python-tooling zou het systeem voor kleine projecten onnodig verzwaren.
 
 Controleer upstream-documentatie bij integratie van code, extra dependencies of daadwerkelijke plugins. Markdown-instructies alléén installeren geen runtime-tools.
+
+## Aanvullende bronnen: selectieve integratie
+
+| Bron | Relevante principes | HBS |
+|---|---|---|
+| [Claude Vibe Skills](https://github.com/darthrater78/claude-vibe-skills) | DESIGN_REFERENCE, SECURITY_WINDOWS, SECURITY_ANDROID, SECURITY_GATE, QUALITY_REFERENCE en releasecontrole | beautiful-html, security-first, debug-verify, clean-deployment |
+| [Google Labs DESIGN.md](https://github.com/google-labs-code/design.md) | Productgebonden design-tokens (alpha-formaat) | templates/DESIGN.template.md |
+
+Niet overgenomen: verplichte zes-gates-procedure voor elke commit, automatische uitvoerbare Python-hooks, verplichte certificate pinning of generieke platformrestrictions. De controles zijn proportioneel naar project en risico.

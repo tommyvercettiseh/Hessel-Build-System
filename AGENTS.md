@@ -53,3 +53,10 @@ Maak hoogwaardige, mooie, snelle, **veilige** en onderhoudbare software met de *
 - Datastromen en architectuur: `visual-diagrams`.
 
 Gebruik een projectgebonden ARCHITECTURE.md alleen wanneer die de **daadwerkelijk gecontroleerde** projectstructuur documenteert.
+
+## Compatibiliteit van skills
+
+- Veiligheid, privacy, autorisatie en expliciete gebruikerswensen gaan voor; daarna bewezen projectconstraints en correcte resultaten; daarna centrale adviezen en esthetiek. Een specialistische skill vult de regels aan en vervangt ze niet.
+- Minimalisme mag security, echte functionaliteit, gebruiksvriendelijkheid of noodzakelijke tests niet verwijderen.
+- Voor blijvende UI-projecten: baseer een eventuele projectgebonden `DESIGN.md` op bestaande tokens en code; bij een losse HTML-tool volstaan CSS-variabelen. Geen universeel kleurpalet of verplichte nieuwe dependencies.
+- De check-intensiteit volgt het risico. Deze instructies installeren geen hooks of plugins en voeren geen verplichte zes-gates-releaseprocedure in.

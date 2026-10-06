@@ -23,3 +23,13 @@ description: Design and build visually exceptional, fully functional responsive 
 - Respecteer toegankelijkheid: semantische controls, keyboard, aria waar zinvol, zichtbare focus, voldoende contrast.
 
 Bronideeën: Impeccable en Addy Osmani frontend-ui-engineering.
+
+## Designcontract en visuele controle (selectief)
+
+1. Controleer bestaande kleuren, spacing, fonts, tokens en bestaande `DESIGN.md`; de huidige merkidentiteit is leidend tenzij herontwerp gevraagd is.
+2. Bij langdurige projecten met meerdere schermen kan `templates/DESIGN.template.md` dienen voor een **eigen** `DESIGN.md` met meetbare tokens (kleur, typografie, radius, spacing), navigatie en states (hover, focus, disabled, loading, empty, error). Gebruik geen centrale standaardkleuren in alle projecten.
+3. Bij losse HTML-tools zijn CSS-variabelen genoeg; geen design-document, npm-linter of plugin verplicht.
+4. Vermijd onbedoelde AI-templatepatronen zoals overbodige kaarten, zware schaduwen en decoratieve gradients. Bewust gekozen merkpatronen zijn toegestaan.
+5. Na UI-wijziging: wanneer een browser beschikbaar is screenshot op de relevante viewport en interactiestates, grootste afwijking herstellen, maximaal drie iteraties. Test keyboard, focus en leescontrast (WCAG AA, normale tekst 4,5:1 en grote tekst 3:1). Zonder browser niet beweren dat deze controle uitgevoerd is.
+
+Bronidee: Claude Vibe Skills `DESIGN_REFERENCE.md` en Google Labs `DESIGN.md`.

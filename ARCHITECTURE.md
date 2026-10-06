@@ -21,3 +21,10 @@ Deze repo bevat **geen** specifieke projectimplementaties, API-keys, builds, APK
 ## Voorrangsregels
 
 Expliciete opdracht en veiligheid > aantoonbare projectconstraints > centrale adviezen. Bij verschil tussen centrale skills en bestaande werkende projectstack: onderzoek en kies bewust in plaats van alles te herschrijven.
+
+## Designcontract en risicocontrole
+
+- `templates/DESIGN.template.md` is alleen een **optioneel** sjabloon voor een productgebonden `DESIGN.md`, geen centrale branding. Bestaand werkend design behouden tenzij redesign is gevraagd.
+- UI: test werkelijke states en screenshots wanneer browser beschikbaar is; hoogstens drie betekenisvolle verfijningsrondes. Zonder screenshot geen claim van visuele verificatie.
+- Docs/typo: gerichte check. Codegedrag: regressietest. Upload/auth/financiën: input-, negatieve en securitytests. Release: exact artefact, CI, rechten en doelomgeving.
+- Veiligheid, privacy en toestemming prevaleren boven bondige code en optionele designpolish; toets specifieke skill-regels aan dit principe.

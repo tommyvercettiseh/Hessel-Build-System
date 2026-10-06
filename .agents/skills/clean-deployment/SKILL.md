@@ -19,3 +19,13 @@ description: Minimal safe CI and release workflow for GitHub Actions, website ho
 **Verslag:** Gewijzigd, Getest, Build, Gepubliceerd, Live geverifieerd/niet getest.
 
 Bronideeën: Addy Osmani ci-cd-and-automation.
+
+## Risicogewogen kwaliteits- en release-gates
+
+- **Werkcommit:** passende test, diff- en securitycontrole; geen verplichte versie, tag of zes-gates-ceremonie bij een kleine wijziging.
+- **Release/publicatie:** controleer als relevant buildartefact, regressies, kwetsbare dependencies, secret-lekken, documentatie, versieconventie, rollback en de daadwerkelijk bereikbare live-omgeving. Kritieke/hoge bevindingen worden opgelost of expliciet voor besluitvorming voorgelegd, nooit als groen verborgen.
+- **GitHub Actions:** least privilege, veilige/pinned actionversies waar passend, liefst `persist-credentials: false` en geen ongecontroleerde expression-injectie in shell. Sla zware CI bij docs-only wijzigingen alleen over met betrouwbare changed-files-checks.
+- **UI-releases:** screenshot/documentatie tegen de echte pagina controleren wanneer toegang bestaat; geen fictieve verificatie.
+- **Toestemming:** branch/PR bij substantiële risico's; expliciete opdracht om commits/push uit te voeren volstaat binnen die scope, zonder kunstmatige bevestiging voor elke commit. Tags en productiepublicaties alleen wanneer geautoriseerd.
+
+Bronidee: Claude Vibe Skills `RELEASE_GATES.md`, `SECURITY_GATE.md` en workflow-referenties.
