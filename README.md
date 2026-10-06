@@ -1,57 +1,45 @@
-# FaceDetect
+# Hessel Build System
 
-Lokale AI fotoselector die gezichten in een gekozen map detecteert, vergelijkbare gezichten groepeert en foto's naar gekozen uitvoermappen kopieert.
+**Centrale bron van waarheid** voor Hessel's AI-ontwikkelwerk: prachtige, snelle HTML-tools; veilige Python/Windows-automatisering; Android; GitHub-deployment en zo min mogelijk handmatige input.
 
-## Functies
+## Gebruik
 
-- Kies een bronmap via een Windows mapvenster
-- Scan JPG, JPEG, PNG en WEBP bestanden
-- Preview van automatisch gevonden unieke personen
-- Geef iedere persoon een naam
-- Bekijk alle foto's waarin een gekozen persoon voorkomt
-- Sorteer foto's waarop alleen die persoon staat
-- Sorteer foto's waarop die persoon staat, ook wanneer anderen aanwezig zijn
-- Plaats foto's met meerdere gezichten apart
-- Bestanden worden standaard gekopieerd, nooit uit de bronmap verwijderd
-- Volledig lokaal, zonder cloud API
+1. Lees bij iedere code- of ontwerpwijziging eerst de actuele [AGENTS.md](AGENTS.md).
+2. Kies **alleen** de skills die bij de taak passen in [.agents/skills](.agents/skills).
+3. Inspecteer vervolgens de daadwerkelijke projectrepo, hergebruik de bestaande stack en voer gerichte tests uit.
+4. Publiceer uitsluitend wanneer gevraagd. Controleer het uiteindelijke resultaat, niet alleen of de build slaagt.
 
-## Installeren
+De bronbestanden in **deze repo** zijn leidend. Maak geen extra kopieën die onafhankelijk aangepast worden. Projectspecifieke feiten horen in de eigen projectrepo.
 
-Python 3.11 wordt aanbevolen.
+## Inhoud
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-Of start na installatie met `start.bat`.
-
-## Werkwijze
-
-1. Klik op **Kies fotomap**.
-2. Klik op **Scan gezichten**.
-3. Controleer de automatisch aangemaakte persoonsgroepen.
-4. Geef groepen herkenbare namen.
-5. Kies een persoon en een sorteerregel.
-6. Bekijk eerst de preview.
-7. Kopieer daarna de geselecteerde foto's naar een uitvoermap.
-
-## Sorteerregels
-
-| Regel | Resultaat |
+| Bestand | Verantwoordelijkheid |
 |---|---|
-| Alleen deze persoon | Foto bevat precies één gezicht en dat gezicht hoort bij de gekozen persoon |
-| Deze persoon, ook met anderen | Iedere foto waarop de gekozen persoon voorkomt |
-| Meerdere personen | Iedere foto met twee of meer gedetecteerde gezichten |
-| Geen gezicht | Foto's waarop geen gezicht is gevonden |
+| [AGENTS.md](AGENTS.md) | Altijd geldende ontwikkelregels |
+| [CHATGPT.md](CHATGPT.md) | Projectinstructies om in ChatGPT te gebruiken |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Hoe de centrale instructies en projectcode samenwerken |
+| [SOURCES.md](SOURCES.md) | Geselecteerde upstream-projecten |
+| [beautiful-html](.agents/skills/beautiful-html/SKILL.md) | Premium HTML, CSS, UX en motion |
+| [lean-code](.agents/skills/lean-code/SKILL.md) | Minimale begrijpelijke code |
+| [security-first](.agents/skills/security-first/SKILL.md) | Browser-, data-, Windows- en APK-beveiliging |
+| [debug-verify](.agents/skills/debug-verify/SKILL.md) | Oorzaak vinden en echte tests draaien |
+| [clean-deployment](.agents/skills/clean-deployment/SKILL.md) | GitHub Actions en releases |
+| [visual-diagrams](.agents/skills/visual-diagrams/SKILL.md) | Interactieve en statische HTML/SVG-schema's |
 
-## Privacy
+## ChatGPT (aanbevolen)
 
-De foto's en gezichtskenmerken blijven lokaal op de computer. De cache staat in `.facedetect/cache.pkl` binnen de geselecteerde fotomap en kan altijd worden verwijderd.
+Plaats de korte instructie uit [CHATGPT.md](CHATGPT.md) in je ChatGPT-projectinstructies. Hierdoor weet ChatGPT **welke GitHub-bron eerst te openen**; een link alleen wordt niet automatisch bij iedere nieuwe chat gelezen.
 
-## Opmerking
+## Andere AI-codeeragents
 
-Gezichtsherkenning blijft probabilistisch. Controleer de preview voordat je grote hoeveelheden foto's kopieert. De gevoeligheid van het groeperen is in de zijbalk aanpasbaar.
+Voor Codex-compatibele agent-skills is `.agents/skills/` de canonieke locatie. Een andere tool kan de skills via een eigen pad of expliciete verwijzing laden. Kopieer niet blind naar alle agents; kies één centraal beheerde bron en controleer wat de gebruikte agent ondersteunt.
+
+## Principes
+
+- **Design hoort bijzonder te zijn; code hoeft niet ingewikkeld te zijn.**
+- Native HTML/CSS/JS en Python-stdlib eerst, frameworks alleen met reden.
+- Echte werking vóór mooie mockups, security nooit wegoptimaliseren.
+- Eén werkende, gecontroleerde implementatie in plaats van tien onafgemaakte opties.
+- Bij destructieve wijzigingen eerst herstelbaarheid vastleggen.
+
+Dit zijn eigen, compacte richtlijnen geïnspireerd op externe repos, geen installaties van die plugins. Zie [SOURCES.md](SOURCES.md).
